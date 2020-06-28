@@ -1,8 +1,6 @@
 from flask import Flask, render_template, url_for, redirect, request, flash
-from bs4 import BeautifulSoup
 import secrets
 import requests
-import time
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(5) 
